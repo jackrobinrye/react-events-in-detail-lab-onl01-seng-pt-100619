@@ -12,3 +12,20 @@ ReactDOM.render(
   </div>,
   document.getElementById('global')
 );
+
+
+// These components are children of the div above them
+
+// <CoordinatesButton onReceiveCoordinates={ mouseCoordinates => console.log(mouseCoordinates) } />
+// <DelayedButton onDelayedClick={ event => console.log(event) } delay={1500} />
+  
+
+// we are passing down the props of
+// onReceiveCoordinates to CoordinatesButton
+// and
+// onDelayedClick to DelayedButton
+
+// Therfore both of those components will have those as props
+// ie this.props.onReceiveCoordinates
+// and
+// this.props.onDelayedClick
